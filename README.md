@@ -35,7 +35,7 @@ ZenTube transforms YouTube into a focused learning environment by eliminating di
    - Click "Load unpacked"
    - Select the extension directory
      
-3. Chrome Web Store Link - shorturl.at/X8fJW
+## Chrome Web Store Link - https://shorturl.at/7kc3s
        
 ## 💡 Usage
 
