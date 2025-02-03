@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "ZenTube",
+  "version": "1.0",
+  "description": "Boost your YouTube learnings: Use focus mode to hide all distraction or switch back anytime for full experience, Try it now!",
+  "action": {
+      "default_popup": "popup.html"
+  },
+  "permissions": [
+      "storage",
+      "scripting",
+      "activeTab",
+      "tabs"
+  ],
+  "icons": {
+      "16": "icon/icon16.png",
+      "32": "icon/icon32.png",
+      "48": "icon/icon48.png",
+      "128": "icon/icon128.png"
+  },
+  "content_scripts": [
+      {
+          "matches": ["*://www.youtube.com/*"],
+          "js": ["contentScript.js"]
+      }
+  ],
+  "host_permissions": [
+      "https://www.youtube.com/*"
+  ],
+  "background": {
+      "service_worker": "background.js"
+  }
+}
